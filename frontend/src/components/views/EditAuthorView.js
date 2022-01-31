@@ -107,9 +107,9 @@ const EditCampusView = (props) => {
           </label>
           <input
             type="text"
-            name="address"
+            name="dob"
             onChange={(e) => handleChange(e)}
-            defaultValue={author.address}
+            defaultValue={author.dob}
             required
           />
           <br />

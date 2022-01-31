@@ -45,7 +45,7 @@ const useStyles = makeStyles(() => ({
     marginLeft: "80px",
     marginTop: '30px'
   },
-  school: {
+  author: {
     textDecoration: "none",
     color: "#FFFFFF",
     fontSize: "30px",
@@ -116,13 +116,12 @@ const BookView = (props) => {
           {book.title}
         </h1>
         <h2>
-          <Link to={`/author/${book.author.id}`} className={classes.school}>
+          <Link to={`/author/${book.author.id}`} className={classes.author}>
             {book.author.name}
           </Link>
         </h2>
         <br />
-        <br />
-        <h3 className = {classes.h3}>
+        <h3 className = {classes.text}>
           {book.description}
         </h3>
         <Link to={`/editbook`}>

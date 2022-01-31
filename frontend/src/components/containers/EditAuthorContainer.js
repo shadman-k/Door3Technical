@@ -9,7 +9,7 @@ class EditAuthorContainer extends Component {
     super(props);
     this.state = {
       name: "",
-      address: "",
+      dob: "",
       description: null,
       redirect: false,
       redirectId: null,
@@ -41,7 +41,7 @@ class EditAuthorContainer extends Component {
     let editedAuthor = {
       name: this.state.name,
       imageUrl: this.state.imageURL,
-      address: this.state.address,
+      dob: this.state.dob,
       description: this.state.description,
       id: cid,
     };
